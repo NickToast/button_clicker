@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Button Clicker</title>
+</head>
+
+<body>
+    <header class="nav-bar"> <!--header nav bar-->
+        <div> <!--dojonary h1-->
+            <h1>Dojonary</h1>
+        </div>
+        <div>
+            <!--search bar-->
+            <input class="search-bar" type="text" placeholder="Search">
+        </div>
+        <div>
+            <!--login button-->
+            <button onclick="logIn()" id="log-In-Out-Button" class="login-button">Login</button>
+        </div>
+    </header>
+    <!--body content container-->
+    <div class="body-container">
+        <main> <!--cards with dictionary definitons-->
+            <!--card one-->
+            <div class="first-card">
+                <div class="left-box"> <!--left box containing names and button-->
+                    <div class="ninja1">
+                        <h2 class="margin-bottom">ninja</h2>
+                        <p class="margin-bottom"><span>noun</span></p>
+                        <p class="margin-bottom">Plural: <span>ninjas</span></p>
+                    </div>
+                    <button onclick="alert('Ninja was liked')" class="likes-button">13 likes</button>
+                </div>
+                <div class="defintion">
+                    <p>A pracitioner skilled in the <a href="#">Japanese</a> art of<a href="#">
+                            ninjutsu</a></p>
+                </div>
+            </div>
+            <!--card two-->
+            <div class="first-card">
+                <div class="left-box">
+                    <div class="ninja1">
+                        <h2 class="margin-bottom">ninja</h2>
+                        <p class="margin-bottom"><span>noun</span></p>
+                        <p class="margin-bottom">Plural: <span>ninjas</span></p>
+                    </div>
+                    <button onclick="alert('Ninja was liked')" class="likes-button">37 likes</button>
+                </div>
+                <div class="defintion">
+                    <p>A <a href="#">programmer</a> who breaks down problems with <a href="#">zen</a>-like focus
+                </div>
+            </div>
+        </main>
+        <aside>
+            <div class="right-box">
+                <h3>Dojonary is defined by <strong>YOU</strong></h3>
+                <button onclick="removeDefinition(this)" class="add-definition-button">Add Definition</button>
+            </div>
+        </aside>
+    </div>
+
+
+
+
+
+
+    <script src="script.js"></script>
+</body>
+
+</html>
